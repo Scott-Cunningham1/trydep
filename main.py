@@ -26,7 +26,6 @@ from typing import (
 
 app = FastAPI()
 
-handler = Mangum(app)
 DATABASE_URL = "postgresql://cfp:runitback66@cfpgame.cdiou22ye712.us-east-2.rds.amazonaws.com:5432/cfpgame"
 pool = ConnectionPool(conninfo=DATABASE_URL)
 router = APIRouter()
